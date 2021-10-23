@@ -2,7 +2,7 @@
   <div class="container">
     <div class="card card_style">
       <div class="card-header">
-          首页
+          首页 > 古装
       </div>
       <div class="container">
         <div class="row">
@@ -41,7 +41,7 @@ export default {
             lists:[],
         }
     },
-    created(){
+    mounted(){
         axios.get('http://localhost/web/api/goods_deal.php')
         .then(res => {
             this.lists = res.data;

@@ -16,6 +16,9 @@ export default new VueRouter({
         {
             path:'/content',
             component:Content,
+            meta:{
+                showCopyright:true
+            }
         },
         {
             path:'/ancient',
@@ -24,9 +27,9 @@ export default new VueRouter({
         {
             path:'/detail',
             component:Detail,
-            props({query}){ //配置Detail组件可以接收query参数
-                return {id:query.id,url:query.url,title:query.title}
-            }
+            props({query:{id,url,title,price}}){ //配置Detail组件可以接收query参数
+                return {id:id,url:url,title:title,price:price}
+            },
         },
         {
             path:'/search',

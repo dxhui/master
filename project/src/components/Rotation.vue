@@ -43,12 +43,12 @@
       </div>
       <div class="col-xl-3 col-lg-3 col-6">
         <div class="img-thumbnail">
-          <img src="../assets/tb.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+          <img src="../assets/pic/tb (1).jpg" class="img-fluid rounded mx-auto d-block" alt="">
         </div>
       </div>
       <div class="col-xl-3 col-lg-3 col-6">
         <div class="img-thumbnail">
-          <img src="../assets/tb2.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+          <img src="../assets/t4.jpg" class="img-fluid rounded mx-auto d-block" alt="">
         </div>
       </div>
     </div>

@@ -9,3 +9,7 @@ new Vue({
   render: h => h(App),
   router:router
 }).$mount('#app')
+//跳转时总是在页面顶端
+router.afterEach(() => {
+  window.scrollTo(0,0);
+});

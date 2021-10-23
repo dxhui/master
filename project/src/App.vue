@@ -1,21 +1,20 @@
 <template>
 <div>
   <Navigation/>
-  <!-- <Rotation/> -->
   <router-view></router-view>
-  <Copyright/>
+  <Copyright v-if="this.$route.meta.showCopyright"/>
 </div>
 </template>
 
 <script>
 
 import Navigation from './components/Navigation.vue';
-// import Rotation from './components/Rotation.vue';
+
 import Copyright from './components/Copyright.vue';
 
 export default {
   name: 'App',
-  components:{Navigation,Copyright}
+  components:{Navigation,Copyright},
 }
 </script>
 <style>
