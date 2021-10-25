@@ -17,7 +17,7 @@ export default new VueRouter({
             path:'/content',
             component:Content,
             meta:{
-                showCopyright:true
+                showCopyright:false
             }
         },
         {

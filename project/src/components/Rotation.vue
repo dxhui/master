@@ -10,21 +10,21 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../assets/t1.jpg" class="d-block w-100" alt="../assets/t1.jpg">
+              <img src="../assets/pic/tb (5).jpg" class="d-block w-100" alt="../assets/t1.jpg">
               <div class="carousel-caption d-none d-md-block">
                 <h5>第一张</h5>
                 <p>一些内容</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../assets/t2.jpg" class="d-block w-100" alt="../assets/t1.jpg">
+              <img src="../assets/pic/tb (4).jpg" class="d-block w-100" alt="../assets/t1.jpg">
               <div class="carousel-caption d-none d-md-block">
                 <h5>第二张</h5>
                 <p>一些内容</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../assets/t3.jpg" class="d-block w-100" alt="../assets/t1.jpg">
+              <img src="../assets/pic/tb (3).jpg" class="d-block w-100" alt="../assets/t1.jpg">
               <div class="carousel-caption d-none d-md-block">
                 <h5>第三张</h5>
                 <p>一些内容</p>
@@ -43,12 +43,12 @@
       </div>
       <div class="col-xl-3 col-lg-3 col-6">
         <div class="img-thumbnail">
-          <img src="../assets/pic/tb (1).jpg" class="img-fluid rounded mx-auto d-block" alt="">
+          <img src="../assets/pic/tb (2).jpg" class="img-fluid rounded mx-auto d-block" alt="">
         </div>
       </div>
       <div class="col-xl-3 col-lg-3 col-6">
         <div class="img-thumbnail">
-          <img src="../assets/t4.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+          <img src="../assets/pic/tb (1).jpg" class="img-fluid rounded mx-auto d-block" alt="">
         </div>
       </div>
     </div>
