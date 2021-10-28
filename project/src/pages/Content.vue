@@ -11,17 +11,17 @@
                   <router-link :to="{
                       path:'/detail',
                       query:{
-                          id:list.id,
-                          url:list.url,
-                          title:list.title,
-                          price:list.price
+                          id:list.g_id,
+                          url:list.g_url,
+                          title:list.g_title,
+                          price:list.g_price
                       }
                   }">
-                    <img :src='list.url' class="img-fluid">
+                    <img :src='list.g_url' class="img-fluid">
                     <div class="character_set">
-                        <p style="color:gray;font-size: 14px;margin-top: 5px;">{{list.title}}</p>
+                        <p style="color:gray;font-size: 14px;margin-top: 5px;">{{list.g_title}}</p>
                     </div>
-                    <hr><div class="a_style"><a href="">￥{{list.price}}</a></div>
+                    <hr><div class="a_style"><a href="">￥{{list.g_price}}</a><a href="#" @click.prevent="addCar" style="float:right;">添加到购物车</a></div>
                   </router-link>
               </div>
           </div>
@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import {Message} from 'element-ui'
 import axios from 'axios';
 export default {
     //该组件为图片内容列表
@@ -39,6 +40,20 @@ export default {
     data(){
         return{
             lists:[],
+        }
+    },
+    methods:{
+        addCar(){
+            let userInfo = localStorage.getItem('userInfo');
+            let _this = this;
+            if (userInfo === null) {
+                Message.warning('未登录，正在前往登录页面，请稍后。。。')
+                setTimeout(() => {
+                    _this.$router.replace('/log')
+                }, 2500);
+            } else {
+                Message.success('等我发个请求在成功也不迟');
+            }
         }
     },
     mounted(){

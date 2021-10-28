@@ -1,16 +1,17 @@
 <template>
   <div class="container">
-    <section class="no_login">
-      <img src="../assets/icons/alert.svg" alt=""><br>
-      <h3>您还没有登录 !</h3>
-      <button type="button" class="btn btn-info">立即登录 !</button>
-    </section>
+    <el-empty description='当前未登录！' v-if="localSave = false">
+      <el-button type='success' plain>立即登录</el-button>
+    </el-empty>
   </div>
 </template>
 
 <script>
 export default {
-    name:'Cars'
+    name:'Cars',
+    methods:{
+      
+    }
 }
 </script>
 

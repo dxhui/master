@@ -9,13 +9,13 @@
                   <router-link :to="{
                       path:'/detail',
                       query:{
-                          id:rand.id,
-                          url:rand.url,
-                          title:rand.title,
-                          price:rand.price
+                          id:rand.g_id,
+                          url:rand.g_url,
+                          title:rand.g_title,
+                          price:rand.g_price
                       }
                   }">
-                      <img :src="rand.url" class="img-thumbnail" alt="err">
+                      <img :src="rand.g_url" class="img-thumbnail" alt="err">
                   </router-link>
               </div>
           </div>

@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
-    <el-empty></el-empty>
+  <div>
+
   </div>
 </template>
 
 <script>
 export default {
-    name:'Ancient'
+    name:'Car'
 }
 </script>
 

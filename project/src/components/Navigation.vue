@@ -1,9 +1,9 @@
 <template>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <router-link class="navbar-brand" to="/content">
+        <a class="navbar-brand">
             <img src="../../public/logo.jpg" width="60px">
-        </router-link>
+        </a>
         <!-- 移动设备上隐藏导航，显示按钮 -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,6 @@ export default {
 </script>
 <style scoped>
     .text-size{
-        font-size: 20px;
         margin-right: 20px;
     }
     
